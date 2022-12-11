@@ -8,6 +8,8 @@
   color: var(--main-color);
   font-family: "Supreme-Variable";
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-size: var(--font-size);
@@ -34,4 +36,16 @@ main {
 .hero {
   text-align: center;
   padding: 24px 0;
+}
+h1, h2, p {
+  margin-bottom: 1em;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #EEE;
+  margin: 36px 0;
+}
+ol {
+  margin: 0;
+  padding-left: 24px;
 }
