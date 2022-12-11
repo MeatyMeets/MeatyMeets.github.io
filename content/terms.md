@@ -1,5 +1,5 @@
 ---
-title: "Terms"
+title: "Terms of Service"
 date: 2022-12-11T16:03:37+08:00
 ---
 
