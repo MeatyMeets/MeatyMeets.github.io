@@ -1,9 +1,12 @@
 {{ define "main" }}
 <div style="margin-top: 24px">
+  {{ range where .Data.Pages "Title" "Home" }}
   <div class="hero">
-    <h1>The smart way to join your meetings on time</h1>
-    <p>Automatically opens your upcoming meetings on Google Calendar, ensuring that you never miss a meeting again.</p>
-    <a href="https://chrome.google.com/webstore/detail/meaty-meets/ajpohkekgaabafinjmabdmnmkddjfpin" target="_blank" class="button">Install Now</a>
+    <h1>{{ .Params.tagline }}</h1>
+    <p>{{ .Params.subtitle }}</p>
+    <a href="{{ .Params.install_url }}" target="_blank" class="button">Install Now</a>
   </div>
+    {{ .Content }}
+  {{ end }}
 </div>
 {{ end }}
