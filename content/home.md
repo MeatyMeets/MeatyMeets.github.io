@@ -1,6 +1,6 @@
 ---
 title: "Home"
-tagline: "The smart way to join your meetings on time"
+tagline: "Automations for productive meetings"
 subtitle: "Automatically opens your upcoming meetings on Google Calendar, ensuring that you never miss a meeting again"
 install_url: "https://chrome.google.com/webstore/detail/meaty-meets/ajpohkekgaabafinjmabdmnmkddjfpin"
 ---

@@ -1,0 +1,1 @@
+hugo server && npx tailwindcss -i index.css -o static/index.css --watch

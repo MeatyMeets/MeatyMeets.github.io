@@ -1,12 +1,21 @@
 {{ define "main" }}
 <div>
   {{ range where .Data.Pages "Title" "Home" }}
-  <div class="hero">
-    <h1>{{ .Params.tagline }}</h1>
-    <p>{{ .Params.subtitle }}</p>
-    <a href="{{ .Params.install_url }}" target="_blank" class="button">Install Now</a>
+  <div
+    class="text-center min-h-screen flex justify-center items-center flex-col"
+  >
+    <h1
+      class="text-center text-5xl font-bold max-w-lg mx-auto pb-8 leading-tight"
+    >
+      {{ .Params.tagline }}
+    </h1>
+    <a
+      class="text-accent-500 font-bold border-2 border-accent-500 bg-accent-100 px-4 py-2 rounded transition-all hover:-translate-y-0.5 hover:drop-shadow-lg"
+      href="{{ .Params.install_url }}"
+      target="_blank"
+      >Add to Chrome</a
+    >
   </div>
-    {{ .Content }}
-  {{ end }}
+  {{ .Content }} {{ end }}
 </div>
 {{ end }}
