@@ -1,30 +1,25 @@
 ---
 title: "Home"
 tagline: "Automations for productive meetings"
-subtitle: "Automatically opens your upcoming meetings on Google Calendar, ensuring that you never miss a meeting again"
 install_url: "https://chrome.google.com/webstore/detail/meaty-meets/ajpohkekgaabafinjmabdmnmkddjfpin"
----
-
----
-
-## How it works
-
-1. Sign in with your Google account
-2. Grant **read-only** access to your calendar
-3. Configure how many minutes in advance you'd like to join your meetings
-4. That's it – Meaty Meets does the rest!
-
----
-
-## FAQs
-
-**Is Meaty Meets free to use?**  
-Yes, Meaty Meets is free to use.
-
-**Does Meaty Meets store my data on your servers?**  
-No, Meaty Meets does not store any data on our servers. Everything is stored in the user's browser, so you can enjoy the convenience of our service without sacrificing your privacy.
-
-**How do I install Meaty Meets?**  
-To install Meaty Meets, simply visit the Chrome Web Store and add the extension to your browser. 
-
+how_it_works:
+  - title: "Connect"
+    content: "Sign in with your Google account and grant read-only access to your calendar"
+    number: 1
+  - title: "Configure"
+    content: "Customize settings as per your needs"
+    number: 2
+  - title: "Done"
+    content: "That's it, Meaty Meets does the rest"
+    number: 3
+features:
+  - title: "Open Meetings"
+    content: "Automatically opens upcoming meetings in a new tab"
+    number: 1
+  - title: "Open Attachments"
+    content: "Along with meetings, associated attachments are opened as well"
+    number: 2
+  - title: "Coming Soon..."
+    content: "Meeting ending reminders, automatic chat messaging, etc."
+    number: 3
 ---

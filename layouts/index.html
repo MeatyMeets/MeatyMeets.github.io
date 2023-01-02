@@ -16,6 +16,20 @@
       >Add to Chrome</a
     >
   </div>
-  {{ .Content }} {{ end }}
+
+  <div class="py-12">
+    <div class="text-center font-bold text-gray-700 mb-8">How it works</div>
+    <div class="flex flex-wrap justify-center">
+      {{ range .Params.how_it_works }} {{ partial "card.html" . }} {{ end }}
+    </div>
+  </div>
+
+  <div class="py-12">
+    <div class="text-center font-bold text-gray-700 mb-8">Features</div>
+    <div class="flex flex-wrap justify-center">
+      {{ range .Params.features }} {{ partial "card.html" . }} {{ end }}
+    </div>
+  </div>
+  {{ end }}
 </div>
 {{ end }}
