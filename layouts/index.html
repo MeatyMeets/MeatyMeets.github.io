@@ -9,15 +9,23 @@
     >
       {{ .Params.tagline }}
     </h1>
-    <a
-      class="text-accent-500 font-bold border-2 border-accent-500 bg-accent-100 px-4 py-2 rounded transition-all hover:-translate-y-0.5 hover:drop-shadow-lg"
-      href="{{ .Params.install_url }}"
-      target="_blank"
-      >Add to Chrome</a
-    >
+    <div>
+      <a
+        class="inline-block align-middle text-accent-500 font-bold border-2 border-accent-500 bg-accent-100 px-4 py-2 rounded transition-all hover:-translate-y-0.5 hover:drop-shadow-lg"
+        href="{{ .Params.install_url }}"
+        target="_blank"
+        >Add to Chrome</a
+      >
+      <a
+        class="inline-block align-middle font-bold border-b-2 border-accent-500 ml-4"
+        href="#how-it-works"
+      >
+        Learn More
+      </a>
+    </div>
   </div>
 
-  <div class="py-12">
+  <div id="how-it-works" class="py-12">
     <div class="text-center font-bold text-gray-700 mb-8">How it works</div>
     <div class="flex flex-wrap justify-center">
       {{ range .Params.how_it_works }} {{ partial "card.html" . }} {{ end }}
