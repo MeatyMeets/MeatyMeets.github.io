@@ -1,5 +1,5 @@
 ---
-title: "Terms of Service"
+title: "Terms of Service | Meaty Meets"
 date: 2022-12-11T16:03:37+08:00
 ---
 

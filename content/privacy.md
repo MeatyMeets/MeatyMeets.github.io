@@ -1,5 +1,5 @@
 ---
-title: "Privacy Policy"
+title: "Privacy Policy | Meaty Meets"
 date: 2022-12-11T15:41:58+08:00
 type: page
 ---
