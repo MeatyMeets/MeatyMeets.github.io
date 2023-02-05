@@ -1,6 +1,6 @@
 ---
 title: "Home"
-tagline: "Automations for productive meetings"
+tagline: "Be a smart presenter and a loyal participant"
 install_url: "https://chrome.google.com/webstore/detail/meaty-meets/ajpohkekgaabafinjmabdmnmkddjfpin"
 how_it_works:
   - title: "Connect"
@@ -19,9 +19,12 @@ features:
   - title: "Open Attachments"
     content: "Along with meetings, associated attachments are opened as well"
     number: 2
+  - title: "Chat Quick View"
+    content: "View messages in the popup without switching to the meeting tab"
+    number: 3
   - title: "Coming Soon..."
     content: "Meeting ending reminders, automatic chat messaging, etc."
-    number: 3
+    number: 4
 faqs:
   - question: "Is Meaty Meets free to use?"
     answer: "Yes, Meaty Meets is free to use."

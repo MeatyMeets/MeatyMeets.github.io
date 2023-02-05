@@ -2,7 +2,8 @@
 <div>
   {{ range where .Data.Pages "Title" "Home" }}
   <div
-    class="text-center min-h-screen flex justify-center items-center flex-col"
+    class="text-center min-h-screen flex justify-center items-center flex-col bg-no-repeat bg-center"
+    style="background-image: url('/background.svg'); background-size: 75%"
   >
     <h1
       class="text-center text-5xl font-bold max-w-lg mx-auto pb-8 leading-tight"
