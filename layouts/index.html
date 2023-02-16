@@ -1,83 +1,89 @@
 {{ define "main" }}
 <div>
   {{ range where .Data.Pages "Title" "Home" }}
-  <div class="flex flex-col-reverse md:flex-row min-h-screen items-center">
-    <div class="flex-1">
-      <h1 class="text-5xl font-bold pb-2 leading-tight">
-        {{ .Params.tagline }}
-      </h1>
-      <div class="pb-8">{{ .Params.subtext }}</div>
-      <div class="pb-3">
-        <a
-          class="inline-block align-middle text-accent-500 font-bold border-2 border-accent-500 bg-accent-100 px-4 py-2 rounded transition-all hover:-translate-y-0.5 hover:drop-shadow-lg"
-          href="{{ .Params.install_url }}"
-          target="_blank"
-          >Add to Chrome</a
-        >
-        <a
-          class="inline-block align-middle font-bold border-b-2 border-accent-500 ml-4"
-          href="#features"
-        >
-          Learn More
-        </a>
-      </div>
-      <div class="text-gray-500">Supports Google Suite & Google Meet only</div>
-    </div>
-    <div class="flex-1">
-      <img
-        class="w-full"
-        src="/background.svg"
-        alt="Screenshot of the extension"
-      />
-    </div>
-  </div>
-
-  <div id="features" class="py-12">
-    <div class="text-center font-bold text-gray-700 mb-8">Features</div>
-
-    <div class="py-8">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-8/12">
-          <img
-            class="w-full"
-            src="/chat-quick-view.svg"
-            alt="Screenshot of the extension"
-          />
+  <div class="container mx-auto px-4 py-12 text-center md:py-0 md:text-left">
+    <div class="flex flex-col-reverse md:flex-row min-h-screen items-center">
+      <div class="flex-1">
+        <h1 class="text-4xl md:text-5xl font-bold pb-2 leading-tight">
+          {{ .Params.tagline }}
+        </h1>
+        <div class="pb-8 text-xl">{{ .Params.subtext }}</div>
+        <div class="pb-3">
+          <a
+            class="inline-block align-middle text-accent-500 font-bold border-2 border-accent-500 bg-accent-100 px-4 py-2 rounded transition-all hover:-translate-y-0.5 hover:drop-shadow-lg"
+            href="{{ .Params.install_url }}"
+            target="_blank"
+            >Add to Chrome</a
+          >
+          <a
+            class="inline-block align-middle font-bold border-b-2 border-accent-500 ml-4"
+            href="#features"
+          >
+            Learn More
+          </a>
         </div>
-        <div class="md:w-4/12">
-          <div class="uppercase text-accent-500 font-bold text-xs">
-            For Presenter
-          </div>
-          <div class="text-2xl font-bold mb-2">
-            Engage and respond to your audience
-          </div>
-          <div class="text-gray-700">
-            With easy access to messages through the extension's popup, you can
-            now engage with your audience without having to switch between tabs
-          </div>
+        <div class="text-gray-400">
+          Supports Google Suite & Google Meet only
         </div>
       </div>
-    </div>
-
-    <div class="py-8">
-      <div class="flex flex-col-reverse md:flex-row items-center">
-        <div class="md:w-4/12">
-          <div class="uppercase text-accent-500 font-bold text-xs">
-            For Attendee
-          </div>
-          <div class="text-2xl font-bold mb-2">Be prepared and on-time</div>
-          <div class="text-gray-700">
-            Join meetings early, review the agenda, bond with other attendees
-          </div>
-        </div>
-        <div class="md:w-8/12">
-          <img class="w-full" src="/open-meetings.svg" />
-        </div>
+      <div class="flex-1">
+        <img class="w-full" src="/background.svg" />
       </div>
     </div>
   </div>
 
-  <div class="py-12">
+  <div class="bg-slate-100">
+    <div class="container mx-auto px-4">
+      <div id="features" class="py-12">
+        <div class="text-center font-bold text-gray-700 mb-8">Features</div>
+
+        <div class="py-8">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-8/12">
+              <img
+                class="w-full"
+                src="/chat-quick-view.svg"
+                alt="Screenshot of the extension"
+              />
+            </div>
+            <div class="md:w-4/12">
+              <div class="uppercase text-accent-500 font-bold text-xs">
+                For Presenter
+              </div>
+              <div class="text-2xl font-bold mb-2">
+                Engage and respond to your audience
+              </div>
+              <div class="text-gray-700">
+                With easy access to messages through the extension's popup, you
+                can now engage with your audience without having to switch
+                between tabs
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-8">
+          <div class="flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-4/12">
+              <div class="uppercase text-accent-500 font-bold text-xs">
+                For Attendee
+              </div>
+              <div class="text-2xl font-bold mb-2">Be prepared and on-time</div>
+              <div class="text-gray-700">
+                Join meetings early, review the agenda, bond with other
+                attendees
+              </div>
+            </div>
+            <div class="md:w-8/12">
+              <img class="w-full" src="/open-meetings.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-12">
     <div class="text-center font-bold text-gray-700 mb-8">
       Frequent Asked Questions
     </div>
