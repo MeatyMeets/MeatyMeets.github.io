@@ -1,6 +1,6 @@
 ---
 title: "Home"
-tagline: "Be an engaging presenter, a puntual attendee"
+tagline: "Be an engaging presenter, a punctual attendee"
 subtext: "Install the extension, connect your calendar and that's it!"
 install_url: "https://chrome.google.com/webstore/detail/meaty-meets/ajpohkekgaabafinjmabdmnmkddjfpin"
 faqs:
