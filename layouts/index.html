@@ -1,4 +1,25 @@
-{{ define "main" }}
+{{ define "meta" }} {{ range where .Data.Pages "Title" "Home" }}
+<!-- Primary Meta Tags -->
+<meta name="title" content="{{ .Title }}" />
+<meta name="description" content="{{ .Params.description }}" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Page.Site.BaseURL }}" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ .Params.description }}" />
+<meta property="og:image" content="{{ .Page.Site.BaseURL }}background.jpg" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="{{ .Page.Site.BaseURL }}" />
+<meta property="twitter:title" content="{{ .Title }}" />
+<meta property="twitter:description" content="{{ .Params.description }}" />
+<meta
+  property="twitter:image"
+  content="{{ .Page.Site.BaseURL }}background.jpg"
+/>
+{{ end }} {{ end }} {{ define "main" }}
 <div>
   {{ range where .Data.Pages "Title" "Home" }}
   <div class="container mx-auto px-4 py-12 text-center md:py-0 md:text-left">
@@ -7,7 +28,7 @@
         <h1 class="text-4xl md:text-5xl font-bold pb-2 leading-tight">
           {{ .Params.tagline }}
         </h1>
-        <div class="pb-8 text-xl">{{ .Params.subtext }}</div>
+        <p class="pb-8 text-xl">{{ .Params.subtext }}</p>
         <div class="pb-3">
           <a
             class="inline-block align-middle text-accent-500 font-bold border-2 border-accent-500 bg-accent-100 px-4 py-2 rounded transition-all hover:-translate-y-0.5 hover:drop-shadow-lg"
@@ -27,7 +48,12 @@
         </div>
       </div>
       <div class="flex-1">
-        <img class="w-full" src="/background.svg" />
+        <img
+          class="w-full"
+          src="/background.svg"
+          alt="Productive meetings with Meaty Meets"
+          title="Productive meetings with Meaty Meets"
+        />
       </div>
     </div>
   </div>
@@ -43,16 +69,17 @@
               <img
                 class="w-full"
                 src="/chat-quick-view.svg"
-                alt="Screenshot of the extension"
+                alt="Engage and respond to your audience"
+                title="Engage and respond to your audience"
               />
             </div>
             <div class="md:w-4/12">
               <div class="uppercase text-accent-500 font-bold text-xs">
                 For Presenter
               </div>
-              <div class="text-2xl font-bold mb-2">
+              <h2 class="text-2xl font-bold mb-2">
                 Engage and respond to your audience
-              </div>
+              </h2>
               <div class="text-gray-700">
                 With easy access to messages through the extension's popup, you
                 can now engage with your audience without having to switch
@@ -68,14 +95,19 @@
               <div class="uppercase text-accent-500 font-bold text-xs">
                 For Attendee
               </div>
-              <div class="text-2xl font-bold mb-2">Be prepared and on-time</div>
+              <h2 class="text-2xl font-bold mb-2">Be prepared and on-time</h2>
               <div class="text-gray-700">
                 Join meetings early, review the agenda, bond with other
                 attendees
               </div>
             </div>
             <div class="md:w-8/12">
-              <img class="w-full" src="/open-meetings.svg" />
+              <img
+                class="w-full"
+                src="/open-meetings.svg"
+                title="Be prepared and on-time"
+                alt="Be prepared and on-time"
+              />
             </div>
           </div>
         </div>
