@@ -17,8 +17,22 @@
   </head>
   <body>
     <main aria-role="main">
-      {{ partial "header.html" }} {{ block "main" . }} {{ end }}
+      {{ partial "header.html" . }} {{ block "main" . }} {{ end }}
     </main>
     {{ partial "footer.html" }}
   </body>
+  <script>
+    const addChromeButton = document.getElementById("add-to-chrome-header");
+    {{ if .IsHome }}
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > window.innerHeight / 2) {
+        addChromeButton.classList.remove("translate-y-20");
+      } else {
+        addChromeButton.classList.add("translate-y-20");
+      }
+    });
+    {{ else }}
+      addChromeButton.classList.remove("translate-y-20");
+    {{ end }}
+  </script>
 </html>

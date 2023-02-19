@@ -1,4 +1,4 @@
-<div class="py-4 fixed w-full bg-white z-50">
+<div class="py-4 fixed w-full bg-white z-50 overflow-hidden">
   <div class="container mx-auto px-4 text-center">
     <a class="no-underline" href="/">
       <img
@@ -12,5 +12,12 @@
         >Meaty Meets</span
       >
     </a>
+    <a
+      id="add-to-chrome-header"
+      class="translate-y-20 ml-4 inline-block align-middle text-accent-500 font-bold border-2 border-accent-500 bg-accent-100 px-2 py-1 text-sm rounded transition-all hover:-translate-y-0.5 hover:drop-shadow-lg"
+      href="{{ .Site.Params.install_url }}"
+      target="_blank"
+      >Add to Chrome</a
+    >
   </div>
 </div>

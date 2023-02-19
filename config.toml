@@ -1,3 +1,5 @@
 baseURL = 'https://meatymeets.github.io'
 languageCode = 'en-us'
 title = 'Be an engaging presenter and a punctual attendee'
+[params]
+    install_url = 'https://chrome.google.com/webstore/detail/meaty-meets/ajpohkekgaabafinjmabdmnmkddjfpin'

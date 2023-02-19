@@ -3,7 +3,6 @@ title: "Home"
 tagline: "Be an engaging presenter, a punctual attendee"
 description: "Presenters can easily access messages and engage attendees without switching tabs. Attendees can be prepared and on-time for meetings."
 subtext: "Install the extension, connect your calendar and that's it!"
-install_url: "https://chrome.google.com/webstore/detail/meaty-meets/ajpohkekgaabafinjmabdmnmkddjfpin"
 faqs:
   - question: "Is Meaty Meets free to use?"
     answer: "Yes, Meaty Meets is free to use."
