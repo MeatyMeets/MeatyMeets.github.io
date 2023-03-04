@@ -1,8 +1,8 @@
 ---
 title: "Home"
-tagline: "Be an engaging presenter, a punctual attendee"
+tagline: "Hassle-free way to join, prep and engage in meetings"
 description: "Presenters can easily access messages and engage attendees without switching tabs. Attendees can be prepared and on-time for meetings."
-subtext: "Install the extension, connect your calendar and that's it!"
+subtext: "No more hassle of finding links and switching tabs. Meaty Meets automatically opens upcoming meetings and provides a quick view of the chat from anywhere."
 faqs:
   - question: "Is Meaty Meets free to use?"
     answer: "Yes, Meaty Meets is free to use."
