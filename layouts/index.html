@@ -181,13 +181,13 @@
     <div class="text-center font-bold text-gray-700 mb-8">
       Frequent Asked Questions
     </div>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {{ range .Params.faqs }} {{ partial "faq.html" . }} {{ end }}
     </div>
   </div>
 
   <div class="bg-green-100 py-12">
-    <div class="max-w-lg m-auto">
+    <div class="max-w-lg m-auto px-2">
       <div class="p-8 bg-white rounded-2xl shadow-lg">
         <p>
           As an engineering manager with many meetings in a day, I experienced
