@@ -2,7 +2,7 @@
 title: "Home"
 tagline: "Hassle-free way to join, prep and engage in meetings"
 description: "Presenters can easily access chats and engage attendees without switching tabs. Attendees can be prepared and on-time for meetings."
-subtext: "No more hassle of finding links and switching tabs. Meaty Meets automatically opens upcoming meetings and provides a quick view of the chat from anywhere."
+subtext: "Meaty Meets eliminates the need to search for meeting links or switch between tabs to view chat while presenting, simplifying the process for you."
 faqs:
   - question: "Is Meaty Meets free to use?"
     answer: "Yes, Meaty Meets is free to use."
